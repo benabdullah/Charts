@@ -158,7 +158,7 @@ class BaseChart
      *
      * @return self
      */
-    public function options($options, bool $overwrite = false)
+    public function options($options, $overwrite = false)
     {
         if ($options instanceof Collection) {
             $options = $options->toArray();
@@ -282,7 +282,7 @@ class BaseChart
      *
      * @return string
      */
-    public function formatOptions(bool $strict = false, bool $noBraces = false)
+    public function formatOptions($strict = false, $noBraces = false)
     {
         if (!$strict && count($this->options) === 0) {
             return '';
@@ -390,7 +390,7 @@ class BaseChart
      *
      * @return string
      */
-    public function formatContainerOptions(string $type = 'css', bool $maxIfNull = false)
+    public function formatContainerOptions($type = 'css', $maxIfNull = false)
     {
         $options = '';
         $height = ($maxIfNull && !$this->height) ? '100%' : $this->height;

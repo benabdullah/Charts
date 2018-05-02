@@ -39,7 +39,7 @@ trait Chart
      *
      * @return self
      */
-    public function displayAxes(bool $axes, bool $strict = false)
+    public function displayAxes($axes, $strict = false)
     {
         if ($strict) {
             return $this->options([
@@ -97,11 +97,11 @@ trait Chart
      * @return self
      */
     public function title(
-        string $title,
-        int $font_size = 14,
-        string $color = '#666',
-        bool $bold = true,
-        string $font_family = "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
+        $title,
+        $font_size = 14,
+        $color = '#666',
+        $bold = true,
+        $font_family = "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
     ) {
         return $this->options([
             'title' => [

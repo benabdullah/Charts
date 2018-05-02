@@ -97,7 +97,7 @@ class DatasetClass
      *
      * @return self
      */
-    public function options($options, bool $overwrite = false)
+    public function options($options, $overwrite = false)
     {
         if ($overwrite) {
             $this->options = $options;
@@ -116,7 +116,7 @@ class DatasetClass
      *
      * @return void
      */
-    public function matchValues(int $values, bool $strict = false)
+    public function matchValues($values, $strict = false)
     {
         while (count($this->values) < $values) {
             array_push($this->values, 0);
