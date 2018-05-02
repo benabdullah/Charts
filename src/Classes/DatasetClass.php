@@ -48,7 +48,7 @@ class DatasetClass
      * @param string $type
      * @param array  $values
      */
-    public function __construct(string $name, string $type, array $values)
+    public function __construct($name, $type, array $values)
     {
         $this->name = $name;
         $this->type = $type;
