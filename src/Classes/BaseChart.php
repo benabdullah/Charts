@@ -119,7 +119,7 @@ class BaseChart
      * @param string           $name
      * @param array|Collection $data
      */
-    public function dataset(string $name, string $type, $data)
+    public function dataset($name, $type, $data)
     {
         if ($data instanceof Collection) {
             $data = $data->toArray();
