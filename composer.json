@@ -24,6 +24,5 @@
                 "ConsoleTVs\\Charts\\ChartsServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
